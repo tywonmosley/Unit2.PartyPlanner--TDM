@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Unit 02 Block 21 - Party Planner</title>
-</head>
-<body>
-	<!-- Create display of information form API -->
-	<h1> Events</h1>
-	<ul id="CurrentEvents"></ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 02 Block 21 - Party Planner</title>
+  </head>
+  <body>
+    <h1>Events</h1>
+    <hr />
+    <!--Create an add even option -->
+    <h2>Add New Event:</h2>
+    <hr />
+    <br />
+    <section>
+      <form id="AddEvent">
+        <p>
+          <label for="Event"></label>
+          EVENT:
+          <br />
+          <input type="text" id="Event" name="Event" />
+        </p>
+        <p>
+          <label for="Location"></label>
+          LOCATION:
+          <br />
+          <input id="Location" type="text" name="Location" />
+        </p>
+        <p>
+          <label for="Date"></label>
+          DATE:
+          <br />
+          <input id="Date" type="datetime-local" name="Date" />
+        </p>
+        <p>
+          <label for="Description"></label>
+          DESCRIPTION:
+          <br />
+          <textarea id="Description" type="text" name="Description"></textarea>
+        </p>
+        <button type="'submit">Add Event</button>
+      </form>
+    </section>
 
-	<!--Create an button option Delete option -->
+    <br />
+    <hr />
+    <br />
+    <!-- Create display of information form API -->
+    <h2>Current Events:</h2>
+    <hr />
+    <ul id="CurrentEvents"></ul>
 
-	<!--Create an add even option -->
-
-	<script src="index.PartyPlanner.js"></script>
-</body>
+    <script src="index.PartyPlanner.js"></script>
+  </body>
 </html>
